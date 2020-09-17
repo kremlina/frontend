@@ -10,9 +10,9 @@
 
 let keywords = ['Гобой','Как звучит флейта','Кларнет'];
 let keyword = keywords[getRandom(0,keywords.length)];
-let buttonYA = document.getElementsByTagName(".button_theme_websearch")[0];
+let buttonYA = document.querySelectorAll('.button_theme_websearch')[0][0];
 
-if (buttonYA != 0){
+if (buttonYA != undefined){
     document.querySelectorAll('.button_theme_websearch')[0].click();
     document.getElementsByName('text')[0].value = keyword;
 }else{
